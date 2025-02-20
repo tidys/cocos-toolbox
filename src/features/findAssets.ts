@@ -29,11 +29,6 @@ export default class FindAssets {
             return;
         this._init = true;
 
-        // 缓存需要的资源路径
-        setTimeout(() => {
-            this.getCacheAssets();
-        }, 1000);
-
         // 创建文件系统监视器，监听特定文件或文件夹的变化
         this._watcher = vscode.workspace.createFileSystemWatcher('**/assets/**/*.{fire,scene,prefab}');
         // 监听文件内容变化事件

@@ -3,6 +3,7 @@ import Config from './config';
 import ColorToken from './features/colorToken';
 import FindAssets from './features/findAssets';
 import MetaSync from './features/metaSync';
+import CreatorWatcher from './features/creatorWatcher';
 
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Cocos Toolbox is now active!');
@@ -23,6 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
 	Config.init(context);
 	ColorToken.init(context);
 	FindAssets.init(context);
+	CreatorWatcher.init(context);
 }
 
 export function deactivate() { }

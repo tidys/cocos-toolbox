@@ -7,5 +7,20 @@
 		"out": true // set this to false to include "out" folder in search results
 	},
 	// Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-	"typescript.tsc.autoDetect": "off"
+	"typescript.tsc.autoDetect": "off",
+	"editor.tabSize": 4,
+	"editor.indentSize": 4,
+	"editor.insertSpaces": false,
+	"[typescript]": {
+		"editor.tabSize": 4,
+		"editor.indentSize": 4,
+		"editor.insertSpaces": false,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[json]": {
+		"editor.autoIndent": "keep",
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.json-language-features"
+	}
 }
